@@ -10,7 +10,6 @@ public class ComputeDiscount extends Discount{
     @Override
     public float computePrice(){
         float amt = super.computePrice();
-        float netAmt = amt - (amt*drate);   //subtract from amount
-        return netAmt;
+        return amt - (amt*drate);
     }
 }
